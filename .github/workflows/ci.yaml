@@ -11,8 +11,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 20.11.0
-      - run: npm test
-      - run: npm build
+      - run: npm run test
+      - run: npm run build
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
 
@@ -30,6 +30,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: false
-          tags: wesleywillians/fc2.0-ci-go:latest
+          tags: hbbucker/fc-node-ci:latest
 
     
