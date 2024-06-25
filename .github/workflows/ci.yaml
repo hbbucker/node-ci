@@ -29,7 +29,7 @@ jobs:
             -Dsonar.sources=./src/.
             -Dsonar.exclusions=**/node_modules/**,**/coverage/**,**/dist/**,**/build/**,**/public/**,**/src/assets/**,**/src/styles/**,**/src/index.js,**/src/index.tsx,**/*.spec.*
             -Dsonar.test.inclusions=**/*.spec.*
-            -Dsonar.js.coverage.lcovReportPath=coverage/lcov.info
+            -Dsonar.javascript.lcov.reportPaths=./coverage/lcov.info
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
