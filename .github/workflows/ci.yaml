@@ -24,7 +24,6 @@ jobs:
         with:
           projectBaseDir: .
           args: |
-            -X
             -Dsonar.organization=hbbucker
             -Dsonar.projectKey=hbbucker_node-ci
             -Dsonar.sources=./src/.
